@@ -34,7 +34,6 @@ const Auth = () => {
     else{
       setError(result.error);
     }
-    console.log(result);
   }
 
   return (
