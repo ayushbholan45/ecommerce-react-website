@@ -1,16 +1,123 @@
-# React + Vite
+# Ecommerce Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive ecommerce website built with React and Vite.
 
-Currently, two official plugins are available:
+## Table of Contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Overview](#overview)
+- [Features](#features)
+- [Project Structure](#project-structure)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Available Scripts](#available-scripts)
+- [Technologies](#technologies)
+- [Dependencies](#dependencies)
+- [Dev Dependencies](#dev-dependencies)
+- [Contributing](#contributing)
 
-## React Compiler
+## Overview
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+This is a fully functional ecommerce website that provides users with the ability to browse products, manage their shopping cart, and complete purchases. The application includes user authentication and a responsive design for optimal viewing on all devices.
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- User authentication and authorization
+- Product browsing and search functionality
+- Shopping cart management
+- Product details page with comprehensive information
+- Checkout process
+- Responsive navigation bar
+- Context-based state management for authentication and cart
+
+## Project Structure
+
+```
+ecommerce-website/
+├── src/
+│   ├── components/
+│   │   ├── Navbar.jsx
+│   │   └── ProductCard.jsx
+│   ├── context/
+│   │   ├── AuthContext.jsx
+│   │   └── CartContext.jsx
+│   ├── data/
+│   │   └── products.js
+│   ├── pages/
+│   │   ├── Auth.jsx
+│   │   ├── Checkout.jsx
+│   │   ├── Home.jsx
+│   │   └── ProductDetails.jsx
+│   ├── App.jsx
+│   ├── App.css
+│   └── main.jsx
+├── public/
+├── index.html
+├── package.json
+├── vite.config.js
+└── eslint.config.js
+```
+
+## Installation
+
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   ```
+
+2. Navigate to the project directory:
+   ```bash
+   cd ecommerce-website
+   ```
+
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+## Usage
+
+1. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+2. Open your browser and navigate to the local development URL (typically http://localhost:5173)
+
+3. Browse products, add items to your cart, and proceed to checkout
+
+## Available Scripts
+
+- `npm run dev` - Start the development server with hot module replacement
+- `npm run build` - Build the application for production
+- `npm run lint` - Run ESLint to check code quality
+- `npm run preview` - Preview the production build locally
+
+## Technologies
+
+- React 19.2.0 - JavaScript library for building user interfaces
+- Vite 7.3.1 - Next-generation frontend build tool
+- React Router DOM 7.13.1 - Client-side routing for React applications
+- React Hook Form 7.71.2 - Efficient forms management
+
+## Dependencies
+
+- react: ^19.2.0
+- react-dom: ^19.2.0
+- react-hook-form: ^7.71.2
+- react-router-dom: ^7.13.1
+
+## Dev Dependencies
+
+- @eslint/js: ^9.39.1
+- @types/react: ^19.2.7
+- @types/react-dom: ^19.2.3
+- @vitejs/plugin-react: ^5.1.1
+- eslint: ^9.39.1
+- eslint-plugin-react-hooks: ^7.0.1
+- eslint-plugin-react-refresh: ^0.4.24
+- globals: ^16.5.0
+- vite: ^7.3.1
+
+## Contributing
+
+Contributions are welcome. Please feel free to submit a pull request or open an issue for any bugs or feature requests.
